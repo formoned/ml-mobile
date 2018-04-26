@@ -1,0 +1,18 @@
+<FlexboxLayout class="page">
+
+    <StackLayout class="form">
+        <Image class="logo" src="~/assets/images/logo.png"></Image>
+        <Label class="header" text="APP NAME"></Label>
+
+        <router-outlet></router-outlet>
+
+    </StackLayout>
+    <!--<label class="login-label sign-up-label" [text]="thisroute"></label>-->
+    <Label class="login-label sign-up-label" (tap)="toggleForm()">
+        <FormattedString>
+            <Span [text]="isLoggingIn ? 'Don’t have an account? ' : 'Back to Login'"></Span>
+            <Span [text]="isLoggingIn ? 'Sign up' : ''" class="bold"></Span>
+        </FormattedString>
+    </Label>
+
+</FlexboxLayout>

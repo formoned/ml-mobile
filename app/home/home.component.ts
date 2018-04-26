@@ -21,6 +21,7 @@ export class HomeComponent implements OnInit {
     *************************************************************/
     ngOnInit(): void {
         this._sideDrawerTransition = new SlideInOnTopTransition();
+        localStorage.removeItem('access_token');
     }
 
     get sideDrawerTransition(): DrawerTransitionBase {

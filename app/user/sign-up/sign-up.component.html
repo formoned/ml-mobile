@@ -1,0 +1,17 @@
+
+<StackLayout class="input-field">
+    <TextField class="input" hint="Email" keyboardType="email" autocorrect="false" autocapitalizationType="none" [(ngModel)]="user.email" returnKeyType="next" (returnPress)="focusPassword()"></TextField>
+    <StackLayout class="hr-light"></StackLayout>
+</StackLayout>
+
+<StackLayout class="input-field">
+    <TextField #password class="input" hint="Password" secure="true" [(ngModel)]="user.password" returnKeyType="next" (returnPress)="focusConfirmPassword()"></TextField>
+    <StackLayout class="hr-light"></StackLayout>
+</StackLayout>
+
+<StackLayout class="input-field">
+    <TextField #password_confirmation class="input" hint="Confirm password" secure="true" [(ngModel)]="user.password_confirmation" returnKeyType="done"></TextField>
+    <StackLayout class="hr-light"></StackLayout>
+</StackLayout>
+
+<Button text="Sign Up" (tap)="submit()" class="btn btn-primary m-t-20"></Button>

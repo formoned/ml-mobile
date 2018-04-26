@@ -34,7 +34,7 @@ it shouldn't have any other siblings other than the <ActionBar> component.
     Use the tkMainContent directive to display the content of the page when you have an app drawer.
     -->
     <GridLayout class="page page-content" tkMainContent>
-        <Label text="List of Persons:" class="h2 text-center"></Label>
+        <Label text="U are in home component!" class="h2 text-center"></Label>
         <!--<ListView items="{{people}}" class="list-group">-->
             <!--<ListView.itemTemplate>-->
                 <!--<StackLayout class="list-group-item">-->
@@ -43,15 +43,15 @@ it shouldn't have any other siblings other than the <ActionBar> component.
             <!--</ListView.itemTemplate>-->
         <!--</ListView>-->
 
-        <ListView [items]="people">
-            <ng-template let-item="item">
-                <StackLayout>
-                    <GridLayout>
-                        <Label text="{{ item.firstname }} {{ item.lastname }}"></Label>
-                    </GridLayout>
-                </StackLayout>
-            </ng-template>
-        </ListView>
+        <!--<ListView [items]="people">-->
+            <!--<ng-template let-item="item">-->
+                <!--<StackLayout>-->
+                    <!--<GridLayout>-->
+                        <!--<Label text="{{ item.firstname }} {{ item.lastname }}"></Label>-->
+                    <!--</GridLayout>-->
+                <!--</StackLayout>-->
+            <!--</ng-template>-->
+        <!--</ListView>-->
 
 
 
