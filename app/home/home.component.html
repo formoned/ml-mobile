@@ -7,7 +7,7 @@
     Use the ActionItem for IOS with position set to left. Using the NavigationButton as a side-drawer button in iOS is not possible, because its function is to always navigate back in the application.
     -->
     <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
-        ios.position="left">
+                ios.position="left">
     </ActionItem>
     <ActionItem text="Add" ios.position="right" android.position="right">
     </ActionItem>
@@ -34,34 +34,34 @@ it shouldn't have any other siblings other than the <ActionBar> component.
     Use the tkMainContent directive to display the content of the page when you have an app drawer.
     -->
     <GridLayout class="page page-content" tkMainContent>
-        <Label text="U are in home component!" class="h2 text-center"></Label>
+        <Label text="List of Persons:" class="h2 text-center"></Label>
         <!--<ListView items="{{people}}" class="list-group">-->
-            <!--<ListView.itemTemplate>-->
-                <!--<StackLayout class="list-group-item">-->
-                    <!--<Label text="{{ firstname }} {{ lastname }}"></Label>-->
-                <!--</StackLayout>-->
-            <!--</ListView.itemTemplate>-->
+        <!--<ListView.itemTemplate>-->
+        <!--<StackLayout class="list-group-item">-->
+        <!--<Label text="{{ firstname }} {{ lastname }}"></Label>-->
+        <!--</StackLayout>-->
+        <!--</ListView.itemTemplate>-->
         <!--</ListView>-->
 
-        <!--<ListView [items]="people">-->
-            <!--<ng-template let-item="item">-->
-                <!--<StackLayout>-->
-                    <!--<GridLayout>-->
-                        <!--<Label text="{{ item.firstname }} {{ item.lastname }}"></Label>-->
-                    <!--</GridLayout>-->
-                <!--</StackLayout>-->
-            <!--</ng-template>-->
-        <!--</ListView>-->
+        <ListView [items]="people">
+            <ng-template let-item="item">
+                <StackLayout>
+                    <GridLayout>
+                        <Label text="{{ item.firstname }} {{ item.lastname }}"></Label>
+                    </GridLayout>
+                </StackLayout>
+            </ng-template>
+        </ListView>
 
 
 
         <!--<StackLayout class="form">-->
-            <!--<StackLayout class="input-field">-->
-                <!--<Label class="label" text="First name"></Label>-->
-                <!--<TextField class="input input-border"></TextField>-->
-            <!--</StackLayout>-->
-            <!--<Button class="btn btn-primary pulse" text="Submit"></Button>-->
-            <!--<Label class="text-danger text-center" text="This is a warning of some sort"></Label>-->
+        <!--<StackLayout class="input-field">-->
+        <!--<Label class="label" text="First name"></Label>-->
+        <!--<TextField class="input input-border"></TextField>-->
+        <!--</StackLayout>-->
+        <!--<Button class="btn btn-primary pulse" text="Submit"></Button>-->
+        <!--<Label class="text-danger text-center" text="This is a warning of some sort"></Label>-->
         <!--</StackLayout>-->
         <!--<Label class="page-icon fa" text="&#xf015;"></Label>-->
         <!--<Label class="page-placeholder" text="Welcome ah "></Label>-->

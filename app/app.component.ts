@@ -16,7 +16,7 @@ import { BackendService } from "./shared/backend.service";
     templateUrl: "app.component.html"
 })
 export class AppComponent {
-    constructor() {
-        BackendService.setup();
-    }
+    // constructor() {
+    //     BackendService.setup();
+    // }
 }

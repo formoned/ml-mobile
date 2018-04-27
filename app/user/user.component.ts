@@ -40,6 +40,13 @@ export class UserComponent implements OnInit {
     isLoggingIn = true;
 
     constructor(private router : Router, private page : Page) {
+        // localStorage.removeItem('access_token');
+        if (localStorage.getItem('access_token') != null) {
+            this.router.navigate(['/home']);
+        }
+        else {
+            this.router.navigate(['/login']);
+        }
         this.page.actionBarHidden = true;
         this.isLoggingIn = this.router.url == '/login' ? true : false;
 
@@ -53,7 +60,7 @@ export class UserComponent implements OnInit {
 
     ngOnInit() {
         if (localStorage.getItem('access_token') != null) {
-            this.router.navigate(['/']);
+            this.router.navigate(['/home']);
         }
     }
 

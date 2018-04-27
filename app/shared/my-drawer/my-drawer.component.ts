@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from "@angular/core";
+import {Router} from "@angular/router";
+import {alert} from "tns-core-modules/ui/dialogs";
 
 /* ***********************************************************
 * Keep data that is displayed in your app drawer in the MyDrawer component class.
@@ -18,10 +20,19 @@ export class MyDrawerComponent implements OnInit {
     *************************************************************/
     @Input() selectedPage: string;
 
+
+    constructor(private router : Router) {
+
+    }
     ngOnInit(): void {
         /* ***********************************************************
         * Use the MyDrawerComponent "onInit" event handler to initialize the properties data values.
         *************************************************************/
+    }
+
+    logoutUser() {
+        localStorage.removeItem('access_token');
+        this.router.navigate(['/']);
     }
 
     /* ***********************************************************
@@ -32,4 +43,5 @@ export class MyDrawerComponent implements OnInit {
     isPageSelected(pageTitle: string): boolean {
         return pageTitle === this.selectedPage;
     }
+
 }

@@ -34,5 +34,4 @@ export class HomeModule implements OnInit {
         });
     }
     // var http = require("http");
-
 }

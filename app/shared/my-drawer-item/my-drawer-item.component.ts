@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from "@angular/core";
 import { RouterExtensions } from "nativescript-angular/router";
+import {Router} from "@angular/router";
 
 /* ***********************************************************
 * Keep data that is displayed as drawer items in the MyDrawer component class.
@@ -16,7 +17,7 @@ export class MyDrawerItemComponent implements OnInit {
     @Input() icon: string;
     @Input() isSelected: boolean;
 
-    constructor(private routerExtensions: RouterExtensions) {
+    constructor(private routerExtensions: RouterExtensions, private router : Router) {
 
     }
 
@@ -38,4 +39,9 @@ export class MyDrawerItemComponent implements OnInit {
             }
         });
     }
+
+    // logoutUser() {
+    //     localStorage.removeItem('access_token');
+    //     this.router.navigate(['/']);
+    // }
 }
