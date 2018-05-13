@@ -3,64 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="89b06393-c265-4b6f-b9c0-ae191db0f04a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/App_Resources/Android/app.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/App_Resources/Android/app.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/App_Resources/Android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/App_Resources/Android/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app-routing.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/app-routing.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/auth-routing.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/auth-routing.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/auth.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/auth.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/auth.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/auth.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/login/login.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/login/login.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/register/register.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/register/register.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/core.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/core.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/models/auth.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/models/auth.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/models/login-body.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/models/login-body.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/models/password-edit-form.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/models/password-edit-form.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/models/posts.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/models/posts.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/models/profile-form.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/models/profile-form.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/models/user-login.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/models/user-login.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/services/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/side-bar-item/side-bar-item.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/side-bar-item/side-bar-item.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/side-bar/side-bar.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/side-bar/side-bar.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/feature-routing.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/feature-routing.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/feature.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/feature.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/feature.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/feature.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/home/home-routing.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/home/home-routing.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/home/home.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/home/home.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/home/home.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/home/home.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/posts/post-edit/post-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/posts/post-edit/post-edit.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/posts/post-edit/post-edit.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/posts/post-edit/post-edit.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/posts/post-edit/post-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/posts/post-edit/post-edit.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/posts/post-new/post-new.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/posts/post-new/post-new.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/posts/post-new/post-new.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/posts/post-new/post-new.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/posts/post-new/post-new.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/posts/post-new/post-new.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/posts/posts-routing.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/posts/posts-routing.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/posts/posts.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/posts/posts.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/posts/posts.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/posts/posts.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/posts/posts.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/posts/posts.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/settings/general/general.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/settings/general/general.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/settings/general/general.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/settings/general/general.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/settings/general/general.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/settings/general/general.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/feature/settings/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/settings/profile/profile.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/feature/settings/profile/profile.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/settings/profile/profile.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/feature/settings/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/settings/profile/profile.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/settings/settings-routing.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/settings/settings-routing.module.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/feature/settings/settings.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/settings/settings.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/settings/settings.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/settings/settings.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/settings/settings.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/settings/settings.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/feature/settings/settings.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/feature/settings/settings.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.aot.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.aot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vendor-platform.android.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/vendor-platform.android.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vendor-platform.ios.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/vendor-platform.ios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/vendor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hooks/before-cleanApp/nativescript-dev-webpack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,7 +21,7 @@
       <file leaf-file-name="post-edit.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/feature/posts/post-edit/post-edit.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="60">
               <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#StackLayout#0;n#DockLayout#0;n#GridLayout#0;n#!!top" expanded="true" />
@@ -83,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.component.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="profile.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/feature/settings/profile/profile.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="539">
+              <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#StackLayout#0;n#ScrollView#0;n#GridLayout#0;n#!!top" expanded="true" />
               </folding>
@@ -95,13 +42,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/feature/settings/profile/profile.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="170" column="4" selection-start-line="170" selection-start-column="4" selection-end-line="170" selection-end-column="4" />
+              <folding>
+                <element signature="n#!!block;n#focusAbout#0;n#ProfileComponent#0" />
+                <element signature="n#!!block;n#selectedIndexChanged#0;n#ProfileComponent#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/feature/settings/settings.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="27" column="120" selection-start-line="27" selection-start-column="120" selection-end-line="27" selection-end-column="120" />
+            <state relative-caret-position="41">
+              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
               <folding>
-                <marker date="1526213261543" expanded="true" signature="763:992" ph="..." />
+                <marker date="1526214387728" expanded="true" signature="763:1022" ph="..." />
               </folding>
             </state>
           </provider>
@@ -245,14 +205,14 @@
         <option value="$PROJECT_DIR$/app/feature/posts/post-edit/post-edit.component.ts" />
         <option value="$PROJECT_DIR$/app/feature/posts/post-new/post-new.component.html" />
         <option value="$PROJECT_DIR$/app/feature/settings/general/general.component.ts" />
-        <option value="$PROJECT_DIR$/app/feature/settings/profile/profile.component.ts" />
         <option value="$PROJECT_DIR$/app/feature/home/home.component.html" />
         <option value="$PROJECT_DIR$/app/feature/posts/post-new/post-new.component.ts" />
         <option value="$PROJECT_DIR$/app/feature/posts/post-edit/post-edit.component.html" />
         <option value="$PROJECT_DIR$/app/feature/settings/general/general.component.html" />
         <option value="$PROJECT_DIR$/app/feature/settings/settings.component.ts" />
-        <option value="$PROJECT_DIR$/app/feature/settings/profile/profile.component.html" />
         <option value="$PROJECT_DIR$/app/feature/settings/settings.component.html" />
+        <option value="$PROJECT_DIR$/app/feature/settings/profile/profile.component.ts" />
+        <option value="$PROJECT_DIR$/app/feature/settings/profile/profile.component.html" />
       </list>
     </option>
   </component>
@@ -1956,7 +1916,7 @@
       <path value="$PROJECT_DIR$/platforms/ios/mlmobile/app/tns_modules/zone.js/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="947" />
@@ -1969,6 +1929,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2078,7 +2039,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
@@ -2218,17 +2178,19 @@
       <workItem from="1526002357715" duration="32435000" />
       <workItem from="1526082018182" duration="8746000" />
       <workItem from="1526194998227" duration="13522000" />
-      <workItem from="1526213022410" duration="236000" />
+      <workItem from="1526213022410" duration="418000" />
+      <workItem from="1526214231499" duration="470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176201000" />
+    <option name="totallyTimeSpent" value="176853000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="947" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14464286" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
@@ -2236,7 +2198,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.46712127" weight="0.19303797" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49439844" visible="true" weight="0.15784115" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49439844" visible="true" weight="0.18086347" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="CSS Styles" order="12" weight="0.21413502" />
@@ -2246,7 +2208,6 @@
       <window_info id="Captures" order="5" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -2331,7 +2292,7 @@
         <state relative-caret-position="390">
           <caret line="26" column="175" selection-start-line="26" selection-start-column="175" selection-end-line="26" selection-end-column="175" />
           <folding>
-            <marker date="1526213261543" expanded="true" signature="763:992" ph="..." />
+            <marker date="1526214387728" expanded="true" signature="763:1022" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2579,21 +2540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/feature/settings/profile/profile.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
-          <folding>
-            <element signature="e#884#1044#0" />
-            <element signature="e#1079#1239#0" />
-            <element signature="e#1854#2913#0" />
-            <element signature="n#!!block;n#focusAbout#0;n#ProfileComponent#0" />
-            <element signature="n#!!block;n#displayCountryDialog#0;n#ProfileComponent#0" />
-            <element signature="n#!!block;n#selectedIndexChanged#0;n#ProfileComponent#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/feature/home/home.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -2653,19 +2599,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/feature/settings/profile/profile.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="n#style#0;n#StackLayout#0;n#ScrollView#0;n#GridLayout#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/feature/posts/post-edit/post-edit.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="60">
           <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
           <folding>
             <element signature="n#style#0;n#StackLayout#0;n#DockLayout#0;n#GridLayout#0;n#!!top" expanded="true" />
@@ -2675,10 +2611,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/feature/settings/settings.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="27" column="120" selection-start-line="27" selection-start-column="120" selection-end-line="27" selection-end-column="120" />
+        <state relative-caret-position="41">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding>
-            <marker date="1526213261543" expanded="true" signature="763:992" ph="..." />
+            <marker date="1526214387728" expanded="true" signature="763:1022" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/feature/settings/profile/profile.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="170" column="4" selection-start-line="170" selection-start-column="4" selection-end-line="170" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!block;n#focusAbout#0;n#ProfileComponent#0" />
+            <element signature="n#!!block;n#selectedIndexChanged#0;n#ProfileComponent#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/feature/settings/profile/profile.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#StackLayout#0;n#ScrollView#0;n#GridLayout#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

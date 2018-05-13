@@ -1,8 +1,8 @@
 <GridLayout class="page page-content" >
 
 
-    <ScrollView>
-        <ActivityIndicator #submitActivityIndicator [busy]="loadData" width="24" height="24" class="activity-indicator m-t-10"></ActivityIndicator>
+    <!--<ScrollView>-->
+        <!--<ActivityIndicator #submitActivityIndicator [busy]="loadData" width="24" height="24" class="activity-indicator m-t-10"></ActivityIndicator>-->
         <StackLayout class="form" style="margin: 5;" >
             <StackLayout class="input-field">
                 <Label text="Name" class="label font-weight-bold m-b-5"></Label>
@@ -34,19 +34,19 @@
             </StackLayout>
 
             <StackLayout class="input-field">
-                <Label text="Country" class="label font-weight-bold m-b-5"></Label>
+                <Label text="About" class="label font-weight-bold m-b-5"></Label>
                 <TextView #about="ngModel" [(ngModel)]="user.about" height="300px" hint="Enter Note" class="input" editable="{{ editUserForm ? true : false }}"></TextView>
                 <StackLayout class="hr-light"></StackLayout>
             </StackLayout>
 
-            <StackLayout visibility="{{ loadData ? 'visible' : 'collapsed' }}">
-                <ActivityIndicator #submitActivityIndicator [busy]="isSubmiting" width="24" height="24" class="activity-indicator m-t-10"></ActivityIndicator>
-            </StackLayout>
-            <StackLayout visibility="{{ !loadData ? 'visible' : 'collapsed' }}">
-                <Label class="text-center" (tap)="editForm()" text="Cancel" visibility="{{ editUserForm ? 'visible' : 'collapsed' }}"></Label>
-            </StackLayout>
+            <!--<StackLayout visibility="{{ loadData ? 'visible' : 'collapsed' }}">-->
+                <!--<ActivityIndicator #submitActivityIndicator [busy]="isSubmiting" width="24" height="24" class="activity-indicator m-t-10"></ActivityIndicator>-->
+            <!--</StackLayout>-->
+            <!--<StackLayout visibility="{{ !loadData ? 'visible' : 'collapsed' }}">-->
+                <!--<Label class="text-center" (tap)="editForm()" text="Cancel" visibility="{{ editUserForm ? 'visible' : 'collapsed' }}"></Label>-->
+            <!--</StackLayout>-->
         </StackLayout>
-    </ScrollView>
+    <!--</ScrollView>-->
 
 
     <!--<ScrollView>-->

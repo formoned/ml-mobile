@@ -170,6 +170,7 @@ export class ProfileComponent implements OnInit {
     }
     displayCountryDialog(_status) {
         // >> action-dialog-code
+        console.log(_status);
         if(_status == false)
         {
             return;
