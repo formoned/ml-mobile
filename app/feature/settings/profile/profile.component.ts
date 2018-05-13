@@ -1,6 +1,6 @@
-import {Component, ElementRef, OnInit, ViewChild} from "@angular/core";
+import {Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild} from "@angular/core";
 import {ListPicker} from "tns-core-modules/ui/list-picker";
-import {action} from "tns-core-modules/ui/dialogs";
+import {action, alert} from "tns-core-modules/ui/dialogs";
 import {ApiGetService, AuthenticationService} from "../../../core/services";
 import {profileForm} from "../../../core/models";
 
@@ -17,15 +17,17 @@ export interface countries {
 })
 export class ProfileComponent implements OnInit {
 
-    loadData : boolean = true;
+    loadData : boolean = false;
     isSubmiting : boolean = false;
     countries : countries[] = [];
     genders = [];
     genderSelected: string = 'None';
     countrySelected: string = 'None';
-
+    @Output() statusChange = new EventEmitter<boolean>();
     @ViewChild("title") title: ElementRef;
     @ViewChild("about") about: ElementRef;
+
+    test = 'Waiting!';
 
     editUserForm : boolean = false;
     user : profileForm = {
@@ -57,16 +59,31 @@ export class ProfileComponent implements OnInit {
             {key : 'woman', value : 'Woman'},
             {key : 'other', value : 'Other'}
         );
+        console.log('profile construct');
     }
 
 
-    ngOnInit(): void {
+    ngOnInit() {
         // Use the "ngOnInit" handler to initialize data for the view.
         this.loadUser();
     }
 
+    onSave(){
+        this.test = 'ITs save';
+
+        this.submit(this.user);
+    }
+    onEdit() {
+        this.test = 'ITs edit';
+        this.editForm();
+    }
+    onCancel() {
+        this.editForm();
+    }
+
     // Load data
     loadUser() {
+        this.loadData = true;
         this.authenticationService.getUser()
             .subscribe((response : any) => {
                     this.user.name = response.name;
@@ -209,6 +226,7 @@ export class ProfileComponent implements OnInit {
     }
     editForm() {
         this.editUserForm = !this.editUserForm;
+        this.statusChange.emit(this.editUserForm);
         if(!this.editUserForm) {
             console.log('Here is me');
             // Reset interface
@@ -227,18 +245,28 @@ export class ProfileComponent implements OnInit {
     }
     submit (value : profileForm) {
         this.editUserForm = false;
-        this.isSubmiting = true;
+        this.loadData = true;
         this.authenticationService.changeProfileInfo(value)
             .subscribe((response : any) => {
                 if(response.success === true) {
-                        this.isSubmiting = false;
+                        this.loadData = false;
+                        this.statusChange.emit(false);
+                        this.alert('Changes was Saved');
                     } else {
                         // false
+                        this.alert(response.message);
                     }
                 },
                 error => {
                     alert((JSON.parse(error.text())).message);
                     console.log(error.text());
                 });
+    }
+    alert(message: string) {
+        return alert({
+            title: "Profile",
+            okButtonText: "OK",
+            message: message
+        });
     }
 }

@@ -25,10 +25,15 @@ export class GeneralComponent implements OnInit {
         private authenticationService : AuthenticationService
     ) {
         // Use the constructor to inject services.
+        console.log('general construct')
     }
 
     ngOnInit(): void {
         // Use the "ngOnInit" handler to initialize data for the view.
+    }
+
+    onSave() {
+        this.submit(this.passwordForm);
     }
 
     focusPassword() {

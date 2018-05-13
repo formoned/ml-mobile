@@ -1,5 +1,7 @@
 <ActionBar class="action-bar">
 
+
+    <!--<ActionItem ></ActionItem>-->
     <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="goBack()"></NavigationButton>
     <ActionItem visibility="{{ postData.editable ? 'visible' : 'collapsed' }}" ios.systemIcon="0" android.systemIcon="ic_menu_save" ios.position="right" (tap)="onSave()"></ActionItem>
     <ActionItem visibility="{{ !postData.editable ? 'visible' : 'collapsed' }}" ios.systemIcon="2" android.systemIcon="ic_menu_edit" ios.position="right" (tap)="onEdit()"></ActionItem>
@@ -49,8 +51,4 @@
             </GridLayout>
         </StackLayout>
     </DockLayout>
-
-    <ScrollView visibility="{{ !loadData ? 'visible' : 'collapsed' }}">
-
-    </ScrollView>
 </GridLayout>

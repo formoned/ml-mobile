@@ -102,7 +102,9 @@ export class HomeComponent implements OnInit {
         console.log('Map Ready');
         this.mapView = event.object;
         var gMap = event.gMap;
-        gMap.setMyLocationEnabled(true);
+        // gMap.setMyLocationEnabled(true);
+        // gMap.myLocationButtonEnableds = true;
+        this.mapView.myLocationEnabled = true;
         this.loadUserPostsMarkers();
         this.monitor();
     }

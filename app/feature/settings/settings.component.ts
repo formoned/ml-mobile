@@ -2,6 +2,8 @@ import { Component, OnInit, ViewChild } from "@angular/core";
 import {DrawerTransitionBase, SlideInOnTopTransition} from "nativescript-pro-ui/sidedrawer";
 import {RadSideDrawerComponent} from "nativescript-pro-ui/sidedrawer/angular";
 import { SelectedIndexChangedEventData, TabView, TabViewItem } from "tns-core-modules/ui/tab-view";
+import {ProfileComponent} from "./profile/profile.component";
+import {GeneralComponent} from "./general/general.component";
 // import { DrawerTransitionBase, SlideInOnTopTransition } from "nativescript-pro-ui/sidedrawer";
 // import { RadSideDrawerComponent } from "nativescript-pro-ui/sidedrawer/angular";
 
@@ -16,6 +18,10 @@ export class SettingsComponent implements OnInit {
     * It is used in the "onDrawerButtonTap" function below to manipulate the drawer.
     *************************************************************/
     @ViewChild("drawer") drawerComponent: RadSideDrawerComponent;
+    @ViewChild(ProfileComponent) profile: ProfileComponent;
+    @ViewChild(GeneralComponent) password: GeneralComponent;
+    actionBarDuoType : boolean = true;
+    profileEditable : boolean = false;
     private _sideDrawerTransition: DrawerTransitionBase;
 
     private _title: string;
@@ -27,6 +33,25 @@ export class SettingsComponent implements OnInit {
         this._sideDrawerTransition = new SlideInOnTopTransition();
     }
 
+    onPassSave() {
+        this.password.checkForm();
+    }
+
+    onSave() {
+        this.profile.onSave();
+    }
+
+    onEdit() {
+        this.profile.onEdit();
+    }
+
+    onStatusChange(statusCallback : boolean) {
+        this.profileEditable = statusCallback;
+    }
+
+    onCancel() {
+        this.profile.onEdit();
+    }
     get title(): string {
         return this._title;
     }
@@ -54,5 +79,11 @@ export class SettingsComponent implements OnInit {
         const selectedTabViewItem = tabView.items[args.newIndex];
 
         this.title = selectedTabViewItem.title;
+        if(this.title === 'Profile') {
+            this.actionBarDuoType = true;
+        }
+        else {
+            this.actionBarDuoType = false;
+        }
     }
 }

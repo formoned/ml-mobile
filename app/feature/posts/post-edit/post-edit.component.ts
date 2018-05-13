@@ -155,9 +155,12 @@ export class PostEditComponent implements OnInit {
         console.log('Map Ready');
         this.mapView = event.object;
         var gMap = event.gMap;
-        gMap.setMyLocationEnabled(true);
+        // gMap.setMyLocationEnabled(true);
+        this.mapView.myLocationEnabled = true;
+
+
         this.loadPost(this.id);
-        this.monitor();
+        // this.monitor();
     }
 
     public monitor(args?) {

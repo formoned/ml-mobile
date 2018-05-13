@@ -12,10 +12,23 @@
     <!--
     Use the ActionItem for IOS with position set to left. Using the NavigationButton as a side-drawer button in iOS is not possible, because its function is to always navigate back in the application.
     -->
-    <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onSideBarButtonTap()"
+    <ActionItem visibility="{{ profileEditable === true && actionBarDuoType === true ? 'visible' : 'collapsed' }}" ios.systemicon="1" android:visibility="collapsed" (tap)="onCancel()"
                 ios.position="left">
     </ActionItem>
+    <ActionItem ios.icon="res://navigation/menu"  visibility="{{ profileEditable === false ? 'visible' : 'collapsed' }}" android:visibility="collapsed" (tap)="onSideBarButtonTap()"
+                ios.position="left">
+    </ActionItem>
+
+
+
+    <!--<Label class="action-bar-title" [text]="actionBarDuoType"></Label>-->
     <Label class="action-bar-title" text="Settings"></Label>
+
+    <ActionItem visibility="{{ actionBarDuoType === false ? 'visible' : 'collapsed' }}" ios.systemIcon="3" android.systemIcon="ic_menu_save" ios.position="right" (tap)="onPassSave()"></ActionItem>
+    <ActionItem visibility="{{ profileEditable === true && actionBarDuoType === true ? 'visible' : 'collapsed' }}" android:visibility="collapsed" ios.systemIcon="0" ios.position="right" (tap)="onSave()"></ActionItem>
+    <ActionItem visibility="{{ profileEditable === false && actionBarDuoType === true ? 'visible' : 'collapsed' }}" ios.systemIcon="2" android.systemIcon="ic_menu_edit" ios.position="right" (tap)="onEdit()"></ActionItem>
+    <ActionItem visibility="{{ profileEditable === true && actionBarDuoType === true ? 'visible' : 'collapsed' }}" ios:visibility="collapsed" android.systemIcon="ic_menu_save" (tap)="onSave()"></ActionItem>
+
 </ActionBar>
 
 
@@ -37,7 +50,7 @@
 
     <TabView class="page page-content" tkMainContent (selectedIndexChanged)="onSelectedIndexChanged($event)">
         <StackLayout *tabItem="{title: 'Profile'}">
-            <Profile></Profile>
+            <Profile (statusChange)="onStatusChange($event)"></Profile>
         </StackLayout>
 
         <StackLayout *tabItem="{title: 'General'}">

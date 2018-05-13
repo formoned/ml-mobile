@@ -76,7 +76,7 @@ export class PostNewComponent implements OnInit {
         console.log('Map Ready');
         this.mapView = event.object;
         var gMap = event.gMap;
-        gMap.setMyLocationEnabled(true);
+        this.mapView.myLocationEnabled = true;
 
         this.mapView.removeAllMarkers();
         var marker = new Marker();

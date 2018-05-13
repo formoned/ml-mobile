@@ -24,9 +24,9 @@
             <StackLayout visibility="{{ isSubmiting ? 'visible' : 'collapsed' }}">
                 <ActivityIndicator #submitActivityIndicator [busy]="isSubmiting" width="24" height="24" class="activity-indicator m-t-10"></ActivityIndicator>
             </StackLayout>
-            <StackLayout visibility="{{ !isSubmiting ? 'visible' : 'collapsed' }}">
-                <Button text="Submit" (tap)="checkForm()" class="btn btn-primary m-t-10"></Button>
-            </StackLayout>
+            <!--<StackLayout visibility="{{ !isSubmiting ? 'visible' : 'collapsed' }}">-->
+                <!--<Button text="Submit" (tap)="checkForm()" class="btn btn-primary m-t-10"></Button>-->
+            <!--</StackLayout>-->
 
 
         </StackLayout>
