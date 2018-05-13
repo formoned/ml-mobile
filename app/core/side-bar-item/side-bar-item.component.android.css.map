@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;;IAGI;ACAJ;;IAEI;ACFJ;;IAEI;ACiCJ;;GAEG;ACjCH,qBAAsB;EACpB,YAAY,EALqB,EAAE;EAMnC,2BAAM;IACJ,cAAc,EAAE,MAAM;IACtB,KAAK,EDFG,OAAO;ECIjB,yBAAI;IACF,KAAK,EATmB,EAAE;IAU1B,YAAY,EAXc,EAAE;EAa9B,8BAAW;IACT,gBAAgB,EFCR,OAAO;IEAf,oCAAM;MACJ,KAAK,EFFS,IAAM",
+"sources": ["../../../node_modules/nativescript-theme-core/scss/_forest.scss","../../../node_modules/nativescript-theme-core/scss/skins/light/_variables.scss","../../../node_modules/nativescript-theme-core/scss/skins/forest/_variables.scss","../../_app-variables.scss","_side-bar-item.component.scss"],
+"names": [],
+"file": "side-bar-item.component.android.css"
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;;IAGI;ACAJ;;IAEI;ACFJ;;IAEI;ACiCJ;;GAEG",
+"sources": ["../../../node_modules/nativescript-theme-core/scss/_forest.scss","../../../node_modules/nativescript-theme-core/scss/skins/light/_variables.scss","../../../node_modules/nativescript-theme-core/scss/skins/forest/_variables.scss","../../_app-variables.scss"],
+"names": [],
+"file": "settings.component.css"
+}

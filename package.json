@@ -6,7 +6,7 @@
   "nativescript": {
     "id": "org.nativescript.mlartislapacom",
     "tns-android": {
-      "version": "3.4.2"
+      "version": "4.0.1"
     }
   },
   "scripts": {
@@ -22,10 +22,12 @@
     "@angular/platform-browser": "~5.2.0",
     "@angular/platform-browser-dynamic": "~5.2.0",
     "@angular/router": "~5.2.0",
-    "kinvey-nativescript-sdk": "^3.10.2",
-    "nativescript-angular": "~5.2.0",
+    "kinvey-nativescript-sdk": "^3.10.3",
+    "nativescript-angular": "^5.3.0",
+    "nativescript-geolocation": "^4.2.6",
+    "nativescript-google-maps-sdk": "^2.6.0",
     "nativescript-localstorage": "^1.1.5",
-    "nativescript-pro-ui": "~3.3.0",
+    "nativescript-pro-ui": "^3.4.1",
     "nativescript-theme-core": "^1.0.4",
     "reflect-metadata": "~0.1.10",
     "rxjs": "~5.5.5",

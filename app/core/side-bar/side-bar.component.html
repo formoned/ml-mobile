@@ -1,0 +1,36 @@
+<!--
+The MyDrawer custom component view is where you define what will be displayed in the app drawer.
+Feel free to customize layouts and components to change how your app drawer looks.
+-->
+<GridLayout rows="auto, *" class="sidedrawer sidedrawer-left">
+    <StackLayout row="0" class="sidedrawer-header">
+        <Label class="sidedrawer-header-image fa" text="&#xf2bd;"></Label>
+        <Label class="sidedrawer-header-brand" [text]="user.name"></Label>
+        <Label class="footnote" [text]="user.title"></Label>
+    </StackLayout>
+
+
+    <ScrollView row="1">
+        <StackLayout class="sidedrawer-content">
+            <SideBarItem title="Home" route="/page/home" icon="&#xf015;" [isSelected]="isPageSelected('Home')">
+            </SideBarItem>
+            <SideBarItem title="Posts" route="/page/posts" icon="&#xf1ea;" [isSelected]="isPageSelected('Posts')">
+            </SideBarItem>
+            <SideBarItem title="Settings" route="/page/settings" icon="&#xf013;" [isSelected]="isPageSelected('Settings')">
+            </SideBarItem>
+            <!--<MyDrawerItem title="Browse" route="/browse" icon="&#xf1ea;" [isSelected]="isPageSelected('Browse')">-->
+            <!--</MyDrawerItem>-->
+            <!--<MyDrawerItem title="Search" route="/search" icon="&#xf002;" [isSelected]="isPageSelected('Search')">-->
+            <!--</MyDrawerItem>-->
+            <!--<MyDrawerItem title="Featured" route="/featured" icon="&#xf005;" [isSelected]="isPageSelected('Featured')">-->
+            <!--</MyDrawerItem>-->
+            <!--<MyDrawerItem title="Settings" route="/settings" icon="&#xf013;" [isSelected]="isPageSelected('Settings')">-->
+            <!--</MyDrawerItem>-->
+            <StackLayout class="hr-light"></StackLayout>
+            <GridLayout columns="auto, *" class="sidedrawer-list-item" (tap)="logoutUser()">
+                <Label col="0" text="&#xf090;" class="fa"></Label>
+                <Label col="1" text="Logout" class="p-r-10"></Label>
+            </GridLayout>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>

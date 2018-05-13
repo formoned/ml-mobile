@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA;;;IAGI;ACAJ;;IAEI;ACFJ;;IAEI;ACiCJ;;GAEG;AC9BK,oDAAyB;EACrB,KAAK,EDLC,OAAO;ECMb,MAAM,EARa,EAAE;EASrB,KAAK,EATc,EAAE;EAUrB,SAAS,EAVU,EAAE;EAWrB,OAAO,EAAE,CAAC;EACV,aAAa,EAVe,CAAC;EAW7B,UAAU,EAZe,EAAE;AAe/B,qCAAU;EACN,KAAK,EAAE,wBAAoB;AAInC,8BAAmB;EACf,gBAAgB,EFlBR,OAAO;EEoBf,uDAAyB;IACrB,KAAK,EFXG,IAAM;AEetB,+BAAoB;EAChB,gBAAgB,EHXC,OAAO",
-"sources": ["../../../node_modules/nativescript-theme-core/scss/_forest.scss","../../../node_modules/nativescript-theme-core/scss/skins/light/_variables.scss","../../../node_modules/nativescript-theme-core/scss/skins/forest/_variables.scss","../../_app-variables.scss","_my-drawer.component.scss"],
-"names": [],
-"file": "my-drawer.component.android.css"
-}

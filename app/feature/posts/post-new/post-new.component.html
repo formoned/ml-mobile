@@ -1,0 +1,55 @@
+<ActionBar class="action-bar">
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="goBack()"></NavigationButton>
+    <ActionItem ios.systemIcon="3" android.systemIcon="ic_menu_save" ios.position="right" (tap)="onSave()"></ActionItem>
+
+    <Label class="action-bar-title" text="New Post"></Label>
+</ActionBar>
+
+
+<GridLayout class="page page-content">
+    <StackLayout visibility="{{ isSubmiting ? 'visible' : 'collapsed' }}">
+        <ActivityIndicator #submitActivityIndicator [busy]="isSubmiting" width="24" height="24" class="activity-indicator m-t-10"></ActivityIndicator>
+    </StackLayout>
+
+    <DockLayout visibility="{{ !isSubmiting ? 'visible' : 'collapsed' }}" stretchLastChild="true">
+        <StackLayout dock="top" class="form" style="margin: 5;">
+
+            <StackLayout class="input-field">
+                <Label text="Title" class="label font-weight-bold m-b-5"></Label>
+                <TextField #title="ngModel" [(ngModel)]="post.title" class="input" returnKeyType="next" (returnPress)="focusTitle()" required></TextField>
+                <StackLayout class="hr-light"></StackLayout>
+            </StackLayout>
+
+            <StackLayout class="input-field">
+                <Label text="Description" class="label font-weight-bold m-b-5"></Label>
+                <TextView #description="ngModel" [(ngModel)]="post.description" height="40" hint="Enter Note" class="input"></TextView>
+                <StackLayout class="hr-light"></StackLayout>
+            </StackLayout>
+
+            <StackLayout class="input-field">
+                <!--<Label text="Place marker" class="label font-weight-bold m-b-5"></Label>-->
+                <FlexboxLayout flexWrap="wrap" justifyContent="space-between">
+                    <Label class="input" text="Marker Place"></Label>
+                    <Label [class.text-primary]="true" text="Show" (tap)="goToMarker()"></Label>
+                </FlexboxLayout>
+                <StackLayout class="hr-light"></StackLayout>
+            </StackLayout>
+
+
+        </StackLayout>
+        <StackLayout>
+            <GridLayout>
+                <MapView #mapView
+                         [zoom]="zoom" [minZoom]="minZoom" [maxZoom]="maxZoom" i-padding="50,50,50,50" [padding]="padding" (mapReady)="onMapReady($event)"
+                         (markerSelect)="onMarkerEvent($event)" (markerBeginDragging)="onMarkerEvent($event)"
+                         (markerEndDragging)="onMarkerEvent($event)" (markerDrag)="onMarkerEvent($event)"
+                         (markerInfoWindowTapped)="onMarkerEvent($event)" (coordinateTapped)="onCoordinateTapped($event)"
+                         (cameraChanged)="onCameraChanged($event)"></MapView>
+            </GridLayout>
+        </StackLayout>
+    </DockLayout>
+
+    <ScrollView visibility="{{ !loadData ? 'visible' : 'collapsed' }}">
+
+    </ScrollView>
+</GridLayout>

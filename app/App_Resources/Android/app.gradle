@@ -21,3 +21,6 @@ if(settingsGradleFile.exists())
 {
     apply from: settingsGradleFile;
 }
+project.ext {
+    googlePlayServicesVersion = "11.2+"
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;;IAGI;ACAJ;;IAEI;ACFJ;;IAEI;ACiCJ;;GAEG;AC3BC,oDAAyB;EACvB,KAAK,EDRO,OAAO;ECSnB,MAAM,EAXmB,EAAE;EAY3B,KAAK,EAZoB,EAAE;EAa3B,SAAS,EAbgB,EAAE;EAc3B,OAAO,EAAE,CAAC;EACV,aAAa,EAbqB,CAAC;EAcnC,UAAU,EAfqB,EAAE;AAkBnC,qCAAU;EACR,KAAK,EAAE,wBAAoB;AAI/B,8BAAmB;EACjB,gBAAgB,EFrBJ,OAAO;EEuBnB,uDAAyB;IACvB,KAAK,EFdS,IAAM;AEkBxB,+BAAoB;EAClB,gBAAgB,EHdK,OAAO;;AGkBhC,qBAAsB;EACpB,YAAY,EAnCqB,EAAE;EAoCnC,2BAAM;IACJ,cAAc,EAAE,MAAM;IACtB,KAAK,EDpCG,OAAO;ECsCjB,yBAAI;IACF,KAAK,EAvCmB,EAAE;IAwC1B,YAAY,EAzCc,EAAE;EA2C9B,8BAAW;IACT,gBAAgB,EFjCR,OAAO;IEkCf,oCAAM;MACJ,KAAK,EFpCS,IAAM",
+"sources": ["../../../node_modules/nativescript-theme-core/scss/_forest.scss","../../../node_modules/nativescript-theme-core/scss/skins/light/_variables.scss","../../../node_modules/nativescript-theme-core/scss/skins/forest/_variables.scss","../../_app-variables.scss","_side-bar.component.scss"],
+"names": [],
+"file": "side-bar.component.ios.css"
+}

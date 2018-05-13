@@ -1,0 +1,44 @@
+/**
+ * Convenient single import for forest variables
+ * Includes base variables with forest overrides
+ **/
+/**
+ * Light variable overrides
+ **/
+/**
+ * Forest variable overrides
+ **/
+/**
+ * Theme variables overrides
+**/
+.sidedrawer.sidedrawer-left .sidedrawer-header-image {
+  color: #F8F8F8;
+  height: 60;
+  width: 60;
+  font-size: 60;
+  padding: 0;
+  margin-bottom: 5;
+  margin-top: 20; }
+.sidedrawer.sidedrawer-left .footnote {
+  color: rgba(255, 255, 255, 0.5); }
+.sidedrawer .sidedrawer-header {
+  background-color: #006968; }
+  .sidedrawer .sidedrawer-header .sidedrawer-header-brand {
+    color: #fff; }
+.sidedrawer .sidedrawer-content {
+  background-color: #fafafa; }
+
+.sidedrawer-list-item {
+  padding-left: 15; }
+  .sidedrawer-list-item Label {
+    vertical-align: center;
+    color: #022734; }
+  .sidedrawer-list-item .fa {
+    width: 20;
+    margin-right: 10; }
+  .sidedrawer-list-item.selected {
+    background-color: #00caab; }
+    .sidedrawer-list-item.selected Label {
+      color: #fff; }
+
+/*# sourceMappingURL=side-bar.component.android.css.map */

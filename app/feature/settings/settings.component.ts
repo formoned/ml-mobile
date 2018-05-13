@@ -1,0 +1,58 @@
+import { Component, OnInit, ViewChild } from "@angular/core";
+import {DrawerTransitionBase, SlideInOnTopTransition} from "nativescript-pro-ui/sidedrawer";
+import {RadSideDrawerComponent} from "nativescript-pro-ui/sidedrawer/angular";
+import { SelectedIndexChangedEventData, TabView, TabViewItem } from "tns-core-modules/ui/tab-view";
+// import { DrawerTransitionBase, SlideInOnTopTransition } from "nativescript-pro-ui/sidedrawer";
+// import { RadSideDrawerComponent } from "nativescript-pro-ui/sidedrawer/angular";
+
+@Component({
+    selector: "app-settings",
+    moduleId: module.id,
+    templateUrl: "./settings.component.html"
+})
+export class SettingsComponent implements OnInit {
+    /* ***********************************************************
+    * Use the @ViewChild decorator to get a reference to the drawer component.
+    * It is used in the "onDrawerButtonTap" function below to manipulate the drawer.
+    *************************************************************/
+    @ViewChild("drawer") drawerComponent: RadSideDrawerComponent;
+    private _sideDrawerTransition: DrawerTransitionBase;
+
+    private _title: string;
+
+    /* ***********************************************************
+    * Use the sideDrawerTransition property to change the open/close animation of the drawer.
+    *************************************************************/
+    ngOnInit(): void {
+        this._sideDrawerTransition = new SlideInOnTopTransition();
+    }
+
+    get title(): string {
+        return this._title;
+    }
+
+    set title(value: string) {
+        if (this._title !== value) {
+            this._title = value;
+        }
+    }
+
+    get sideDrawerTransition(): DrawerTransitionBase {
+        return this._sideDrawerTransition;
+    }
+
+    /* ***********************************************************
+    * According to guidelines, if you have a drawer on your page, you should always
+    * have a button that opens it. Use the showDrawer() function to open the app drawer section.
+    *************************************************************/
+    onSideBarButtonTap(): void {
+        this.drawerComponent.sideDrawer.showDrawer();
+    }
+
+    onSelectedIndexChanged(args: SelectedIndexChangedEventData) {
+        const tabView = <TabView>args.object;
+        const selectedTabViewItem = tabView.items[args.newIndex];
+
+        this.title = selectedTabViewItem.title;
+    }
+}

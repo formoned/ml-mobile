@@ -1,0 +1,70 @@
+<ActionBar class="action-bar">
+    <!--
+    Use the NavigationButton as a side-drawer button in Android because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onSideBarButtonTap()"></NavigationButton>
+    <!--
+    Use the ActionItem for IOS with position set to left. Using the NavigationButton as a side-drawer button in iOS is not possible, because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onSideBarButtonTap()"
+                ios.position="left">
+    </ActionItem>
+    <Label class="action-bar-title" text="Home"></Label>
+    <ActionItem ios:visibility="collapsed" android:icon="res://refresh" ios:icon="res://navigation/refresh" (tap)="onRefresh()"></ActionItem>
+    <ActionItem ios:visibility="collapsed" android:icon="res://add" ios:icon="res://navigation/add" (tap)="onAdd()"></ActionItem>
+
+</ActionBar>
+<RadSideDrawer #drawer showOverNavigation="true" [drawerTransition]="sideDrawerTransition">
+    <!--<page-router-outlet></page-router-outlet>-->
+
+    <!--
+    Use the tkDrawerContent directive to display the content of the app drawer on this page.
+    -->
+    <StackLayout tkDrawerContent>
+        <SideBar [selectedPage]="'Home'"></SideBar>
+        <!--<SideBar [selectedPage]="'Featured'"></SideBar>-->
+    </StackLayout>
+
+    <!--
+    Use the tkMainContent directive to display the content of the page when you have an app drawer.
+    -->
+    <GridLayout class="page page-content" tkMainContent>
+        <!--<ScrollView>-->
+            <!--<StackLayout>-->
+                <GridLayout>
+                    <MapView #mapView [latitude]="latitude" [longitude]="longitude"
+                             [zoom]="zoom" [minZoom]="minZoom" [maxZoom]="maxZoom" [bearing]="bearing"
+                             [tilt]="tilt" i-padding="50,50,50,50" [padding]="padding" (mapReady)="onMapReady($event)"
+                             (markerSelect)="onMarkerEvent($event)" (markerBeginDragging)="onMarkerEvent($event)"
+                             (markerEndDragging)="onMarkerEvent($event)" (markerDrag)="onMarkerEvent($event)"
+                             (markerInfoWindowTapped)="onMarkerEvent($event)" (coordinateTapped)="onCoordinateTapped($event)"
+                             (cameraChanged)="onCameraChanged($event)"></MapView>
+                </GridLayout>
+                <!--<Button class="btn btn-primary btn-active" [text]="buttonText" (tap)="monitor($event)"></Button>-->
+                <!--<StackLayout class="form">-->
+                    <!--<StackLayout class="input-field">-->
+                        <!--<Label text="Longitude" textWrap="true" class="m-l-5 m-r-15 m-t-15"></Label>-->
+                        <!--<Label class="input input-border" editable="false" [text]="monitorLongitude"></Label>-->
+                    <!--</StackLayout>-->
+                    <!--<StackLayout class="input-field">-->
+                        <!--<Label text="Latitude" textWrap="true" class="m-l-5 m-r-15 m-t-15"></Label>-->
+                        <!--<Label class="input input-border" editable="false" [text]="monitorLatitude"></Label>-->
+                    <!--</StackLayout>-->
+                    <!--<StackLayout class="input-field">-->
+                        <!--<Label text="Altitude" textWrap="true" class="m-l-5 m-r-15 m-t-15"></Label>-->
+                        <!--<Label class="input input-border" editable="false" [text]="monitorAltitude"></Label>-->
+                    <!--</StackLayout>-->
+                    <!--<StackLayout class="input-field">-->
+                        <!--<Label text="Direction" textWrap="true" class="m-l-5 m-r-15 m-t-15"></Label>-->
+                        <!--<Label class="input input-border" editable="false" [text]="monitorDirection + '%'"></Label>-->
+                    <!--</StackLayout>-->
+                    <!--<StackLayout class="input-field">-->
+                        <!--<Label text="Speed" textWrap="true" class="m-l-5 m-r-15 m-t-15"></Label>-->
+                        <!--<Label class="input input-border" editable="false" [text]="monitorSpeed+'m/s'"></Label>-->
+                    <!--</StackLayout>-->
+                <!--</StackLayout>-->
+            <!--</StackLayout>-->
+        <!--</ScrollView>-->
+
+    </GridLayout>
+</RadSideDrawer>

@@ -1,0 +1,48 @@
+<ActionBar class="action-bar">
+    <!--
+    Use the NavigationButton as a side-drawer button in Android because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onSideBarButtonTap()"></NavigationButton>
+    <!--
+    Use the ActionItem for IOS with position set to left. Using the NavigationButton as a side-drawer button in iOS is not possible, because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onSideBarButtonTap()"
+                ios.position="left">
+    </ActionItem>
+    <Label class="action-bar-title" text="Posts"></Label>
+    <ActionItem ios:visibility="collapsed" android:icon="res://refresh" ios:icon="res://navigation/refresh" (tap)="onRefresh()"></ActionItem>
+    <ActionItem ios:visibility="collapsed" android:icon="res://add" ios:icon="res://navigation/add" (tap)="onAdd()"></ActionItem>
+</ActionBar>
+
+<RadSideDrawer #drawer showOverNavigation="true" [drawerTransition]="sideDrawerTransition">
+    <!--<page-router-outlet></page-router-outlet>-->
+
+    <!--
+    Use the tkDrawerContent directive to display the content of the app drawer on this page.
+    -->
+    <StackLayout tkDrawerContent>
+        <SideBar [selectedPage]="'Posts'"></SideBar>
+        <!--<SideBar [selectedPage]="'Featured'"></SideBar>-->
+    </StackLayout>
+
+    <!--
+    Use the tkMainContent directive to display the content of the page when you have an app drawer.
+    -->
+    <GridLayout class="page page-content" tkMainContent>
+        <StackLayout visibility="{{ isSubmiting ? 'visible' : 'collapsed' }}">
+            <ActivityIndicator #submitActivityIndicator [busy]="isSubmiting" width="24" height="24" class="activity-indicator m-t-10"></ActivityIndicator>
+        </StackLayout>
+        <ScrollView visibility="{{ !isSubmiting ? 'visible' : 'collapsed' }}">
+            <ListView [items]="posts" class="list-group">
+                <ng-template let-post="item" let-i="index" let-odd="odd" let-even="even">
+                    <GridLayout class="list-group-item" (tap)="onItemTap(post)">
+                        <Label [text]="post.title"></Label>
+                    </GridLayout>
+                </ng-template>
+            </ListView>
+        </ScrollView>
+        <!--<Label class="page-icon fa" text="&#xf005;"></Label>-->
+        <!--<Label class="page-placeholder" text="&lt;!&ndash; Page Posts content goes here &ndash;&gt;"></Label>-->
+        <!--<Label text="lelelelel"></Label>-->
+    </GridLayout>
+</RadSideDrawer>
