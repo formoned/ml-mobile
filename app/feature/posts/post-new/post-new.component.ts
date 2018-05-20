@@ -46,6 +46,7 @@ export class PostNewComponent implements OnInit {
 
     lastCamera: String;
 
+
     constructor(
         private routerExtensions: RouterExtensions,
         private route : ActivatedRoute,

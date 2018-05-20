@@ -50,9 +50,8 @@ export class LoginComponent {
         (error) => {
             alert("Unfortunately we could not find your account.");
         });
-
-
     }
+
     forgotPassword() {
         this.alert(this.user.password);
         // this.alert(localStorage.getItem('access_token'));
